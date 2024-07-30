@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "03456347-4210-40e8-8c82-2498d5f53005",
+		"name": "DROP-US-QUERY",
+		"description": "HAR To Postman Generated Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5040522",
+		"_collection_link": "https://kiranmm.postman.co/workspace/PRELUDE-SYS~2c4d429f-f21f-4b6e-91be-44db94a34fa3/collection/5040522-03456347-4210-40e8-8c82-2498d5f53005?action=share&source=collection_link&creator=5040522"
+	},
+	"item": [
+		{
+			"name": "qoc1s6rbq3.execute-api.us-west-2.amazonaws.com/dev/form/submit-form",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Referer",
+						"value": "https://mindmajix.com/"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"name\": \"{{$randomFirstName}}\",\n \"email\": \"{{$randomEmail}}\",\n \"phone\": \"+91{{$randomPhoneNumber}}\",\n \"message\": \"{{$randomLoremSentence}}\",\n \"course\": \"\",\n \"country\": \"{{$randomCountry}}\",\n \"technology\": \"\",\n \"source\": \"https://mindmajix.com/\",\n \"subject\": \" Live Online\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL1}}/dev/form/submit-form",
+					"host": [
+						"{{baseURL1}}"
+					],
+					"path": [
+						"dev",
+						"form",
+						"submit-form"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Referer",
+								"value": "https://mindmajix.com/"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"name\": \"Balaji\",\n \"email\": \"balaji@yahoo.com\",\n \"phone\": \"+919849098490\",\n \"message\": \"Interested in learning automation testing course\",\n \"course\": \"\",\n \"country\": \"India\",\n \"technology\": \"\",\n \"source\": \"https://mindmajix.com/\",\n \"subject\": \" Live Online\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL1}}/dev/form/submit-form",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"dev",
+								"form",
+								"submit-form"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Tue, 30 Jul 2024 11:57:12 GMT"
+						},
+						{
+							"key": "via",
+							"value": "1.1 e36b73ebb562036012bcf57c61cfda74.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "x-amz-cf-pop",
+							"value": "HYD57-P3"
+						},
+						{
+							"key": "x-amzn-trace-id",
+							"value": "Root=1-66a8d518-6484a0f321ac311d098a37e9;Parent=2258769925fc0fc5;Sampled=0;lineage=d3a9bbab:0"
+						},
+						{
+							"key": "x-amzn-requestid",
+							"value": "7e0dafee-0bd0-4957-8b28-b4c9a95e166b"
+						},
+						{
+							"key": "access-control-max-age",
+							"value": "0"
+						},
+						{
+							"key": "x-cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "access-control-allow-credentials",
+							"value": "true"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "buY72GAMPHcEFTw="
+						},
+						{
+							"key": "content-length",
+							"value": "43"
+						},
+						{
+							"key": "x-amz-cf-id",
+							"value": "w57kkcabgvpNZ0am_jeXWIQ4lK1EfU-UhjzUqi6us0F3iVX32g5zbA=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"message\": \"Form Submitted\",\n \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "cdn.mindmajix.com/mern/images/check.svg",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://mindmajix.com/"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"url": {
+					"raw": "{{baseURL2}}/mern/images/check.svg",
+					"host": [
+						"{{baseURL2}}"
+					],
+					"path": [
+						"mern",
+						"images",
+						"check.svg"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\""
+							},
+							{
+								"key": "Referer",
+								"value": "https://mindmajix.com/"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"url": {
+							"raw": "{{baseURL2}}/mern/images/check.svg",
+							"host": [
+								"{{baseURL2}}"
+							],
+							"path": [
+								"mern",
+								"images",
+								"check.svg"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "date",
+							"value": "Fri, 06 Oct 2023 08:37:02 GMT"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "via",
+							"value": "1.1 41070430d996a3d61ee3be22d11b328e.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "x-amz-version-id",
+							"value": "null"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "x-amz-cf-pop",
+							"value": "HYD57-P1"
+						},
+						{
+							"key": "age",
+							"value": "25759211"
+						},
+						{
+							"key": "x-cache",
+							"value": "Hit from cloudfront"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "last-modified",
+							"value": "Tue, 23 Nov 2021 13:10:54 GMT"
+						},
+						{
+							"key": "server",
+							"value": "AmazonS3"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"afe1a4f390fe19ffb3fbdb6d27423618\""
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "content-type",
+							"value": "image/svg+xml"
+						},
+						{
+							"key": "cache-control",
+							"value": "public, max-age=31536000, must-revalidate"
+						},
+						{
+							"key": "x-amz-cf-id",
+							"value": "Yu7HnIAERcsSv9cjmP3TKcSqp1I_IZqUNyIafUhyxyVvUIGhEc5SpQ=="
+						}
+					],
+					"cookie": [],
+					"body": "image/svg+xml content type is not supported in the response body"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL1",
+			"value": "https://qoc1s6rbq3.execute-api.us-west-2.amazonaws.com",
+			"type": "any"
+		},
+		{
+			"key": "baseURL2",
+			"value": "https://cdn.mindmajix.com",
+			"type": "any"
+		}
+	]
+}
